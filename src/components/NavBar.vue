@@ -21,12 +21,6 @@
   </nav>
 </template>
 
-<script>
-  export default{
-    name: 'NavBar'
-  }
-</script>
-
 <style scoped>
   .hamburger{
     display: none;
@@ -67,6 +61,12 @@
     margin: 0;
     font-weight: 400;
     text-transform: uppercase;
+  }
+  a:link{
+    text-decoration: none;
+  }
+  a, a:visited{
+    color: black;
   }
 
   @media(max-width: 768px){
