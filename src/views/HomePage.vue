@@ -3,12 +3,14 @@
   <main>
     <HeroSection />
   </main>
+  <CTASection />
 </template>
 
 <script>
 import { useHead } from '@vueuse/head'
 import NavBar from '@/components/NavBar.vue'
 import HeroSection from '@/components/HeroSection.vue'
+import CTASection from '@/components/CTASection.vue'
 
 export default ({
   setup(){
@@ -27,7 +29,8 @@ export default ({
   },
   components: {
     NavBar,
-    HeroSection
+    HeroSection,
+    CTASection
   }
 })
 </script>

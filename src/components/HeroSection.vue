@@ -14,14 +14,9 @@
   </section>
 </template>
 
-<script>
-
-</script>
-
 <style scoped>
   section{
     background: var(--medium-green);
-    min-height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +29,7 @@
   }
   div{
     text-align: center;
-    width: 40%;
+    width: 45%;
     line-height: 30px;
     font-weight: bold;
   }
@@ -59,9 +54,6 @@
   }
 
   @media(max-width: 992px){
-    section{
-      min-height: 550px;
-    }
     img{
       width: 500px;
     }
@@ -77,9 +69,6 @@
   }
 
   @media(max-width: 768px){
-    section{
-      min-height: 500px;
-    }
     img{
       width: 300px;
     }
