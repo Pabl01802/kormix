@@ -39,6 +39,7 @@
   }
   button:hover{
     scale: 1.02;
+    cursor: pointer;
   }
 
   @media(max-width: 768px){

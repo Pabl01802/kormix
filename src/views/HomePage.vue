@@ -1,10 +1,14 @@
 <template>
   <NavBar />
+  <main>
+    <HeroSection />
+  </main>
 </template>
 
 <script>
 import { useHead } from '@vueuse/head'
-import NavBar from '../components/NavBar.vue'
+import NavBar from '@/components/NavBar.vue'
+import HeroSection from '@/components/HeroSection.vue'
 
 export default ({
   setup(){
@@ -22,7 +26,8 @@ export default ({
     })
   },
   components: {
-    NavBar
+    NavBar,
+    HeroSection
   }
 })
 </script>
