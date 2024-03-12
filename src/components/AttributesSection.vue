@@ -22,6 +22,7 @@
 <script>
   import { uuid } from 'vue-uuid'
   export default {
+    name: 'AttributeSection',
     data(){
       return {
         attributes: [
@@ -117,6 +118,11 @@
   @media(max-width: 768px){
     img{
       min-width: 350px;
+    }
+  }
+  @media(max-width: 360px){
+    img{
+      min-width: 300px;
     }
   }
 </style>

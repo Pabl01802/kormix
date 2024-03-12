@@ -16,7 +16,7 @@
 
 <style scoped>
   section{
-    background: var(--medium-green);
+    background: var(--dark-green);
     display: flex;
     flex-direction: column;
     align-items: center;

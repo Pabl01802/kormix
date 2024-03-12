@@ -7,6 +7,12 @@
   </section>
 </template>
 
+<script>
+export default {
+  name: 'CTASection'
+}
+</script>
+
 <style scoped>
   section{
     display: none;
@@ -14,7 +20,7 @@
   @media(max-width: 768px){
     section{
       display: flex;
-      background: var(--dark-green);
+      background: var(--medium-green);
       position: fixed;
       bottom: 0;
       width: 100%;

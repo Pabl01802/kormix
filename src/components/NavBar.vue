@@ -25,6 +25,7 @@
 <script>
 import MobileMenu from './MobileMenu.vue'
 export default{
+  name: 'NavBar',
   components: {
     MobileMenu
   },

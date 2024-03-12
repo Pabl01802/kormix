@@ -4,6 +4,7 @@
     <HeroSection />
     <AttributesSection />
   </main>
+  <FooterSection />
   <CTASection />
 </template>
 
@@ -13,6 +14,7 @@ import NavBar from '@/components/NavBar.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import CTASection from '@/components/CTASection.vue'
 import AttributesSection from '@/components/AttributesSection.vue'
+import FooterSection from '@/components/FooterSection.vue'
 
 export default ({
   setup(){
@@ -34,7 +36,8 @@ export default ({
     NavBar,
     HeroSection,
     CTASection,
-    AttributesSection
+    AttributesSection,
+    FooterSection
   }
 })
 </script>
