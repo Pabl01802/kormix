@@ -1,7 +1,8 @@
 <template>
   <nav>
+    <MobileMenu v-if="showMenu" :isShown="showMenu" @close="handleShowMenu" />
     <div class="nav-top">
-      <div class="hamburger">
+      <div class="hamburger" @click="handleShowMenu">
         <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
       </div>
       <ul class="navigation">
@@ -20,6 +21,26 @@
     <h4 class="nav-header">wywóz nieczystości płynnych</h4>
   </nav>
 </template>
+
+<script>
+import MobileMenu from './MobileMenu.vue'
+export default{
+  components: {
+    MobileMenu
+  },
+  data(){
+    return {
+      showMenu: false
+    }
+  },
+  methods: {
+    handleShowMenu(){
+      this.showMenu = !this.showMenu
+    }
+  }
+}
+
+</script>
 
 <style scoped>
   .hamburger{

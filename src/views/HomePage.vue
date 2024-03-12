@@ -2,6 +2,7 @@
   <NavBar />
   <main>
     <HeroSection />
+    <AttributesSection />
   </main>
   <CTASection />
 </template>
@@ -11,10 +12,12 @@ import { useHead } from '@vueuse/head'
 import NavBar from '@/components/NavBar.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import CTASection from '@/components/CTASection.vue'
+import AttributesSection from '@/components/AttributesSection.vue'
 
 export default ({
   setup(){
     useHead({
+      title: 'KORMIX - Zapewniamy konkurencyjne ceny',
       meta: [
         {
           name: 'description',
@@ -30,7 +33,8 @@ export default ({
   components: {
     NavBar,
     HeroSection,
-    CTASection
+    CTASection,
+    AttributesSection
   }
 })
 </script>
