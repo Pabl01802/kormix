@@ -4,6 +4,7 @@
     <HeroSection />
     <AttributesSection />
     <AboutUsHome />
+    <WorkAreasSection />
   </main>
   <FooterSection />
   <CTASection />
@@ -16,6 +17,7 @@ import HeroSection from '@/components/HeroSection.vue'
 import CTASection from '@/components/CTASection.vue'
 import AttributesSection from '@/components/AttributesSection.vue'
 import AboutUsHome from "@/components/AboutUsHome.vue";
+import WorkAreasSection from "@/components/WorkAreasSection.vue";
 import FooterSection from '@/components/FooterSection.vue'
 
 export default ({
@@ -40,6 +42,7 @@ export default ({
     CTASection,
     AttributesSection,
     AboutUsHome,
+    WorkAreasSection,
     FooterSection
   }
 })
