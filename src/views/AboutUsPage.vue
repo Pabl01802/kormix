@@ -1,12 +1,11 @@
 <script>
 import {uuid} from "vue-uuid";
-import CTASection from "@/components/CTASection.vue";
 import AboutUsSection from "@/components/AboutUsSection.vue";
 import ImagesGallery from "@/components/ImagesGallery.vue";
 
 export default {
   name: "AboutUsPage",
-  components: {ImagesGallery, AboutUsSection, CTASection},
+  components: {ImagesGallery, AboutUsSection},
   data(){
     return{
       publicPath: process.env.BASE_URL,
@@ -50,7 +49,6 @@ export default {
     <AboutUsSection />
     <ImagesGallery />
   </main>
-  <CTASection />
 </template>
 
 <style scoped>

@@ -5,13 +5,11 @@
     <AboutUsHome />
     <WorkAreasSection />
   </main>
-  <CTASection />
 </template>
 
 <script>
 import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/HeroSection.vue'
-import CTASection from '@/components/CTASection.vue'
 import AttributesSection from '@/components/AttributesSection.vue'
 import AboutUsHome from "@/components/AboutUsHome.vue";
 import WorkAreasSection from "@/components/WorkAreasSection.vue";
@@ -34,7 +32,6 @@ export default ({
   },
   components: {
     HeroSection,
-    CTASection,
     AttributesSection,
     AboutUsHome,
     WorkAreasSection,

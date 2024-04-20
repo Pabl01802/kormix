@@ -2,14 +2,16 @@
   <NavBar />
   <router-view>
   </router-view>
+  <CTASection />
   <FooterSection />
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'
 import FooterSection from '@/components/FooterSection.vue'
+import CTASection from "@/components/CTASection.vue";
 export default {
   name: 'App',
-  components: { NavBar, FooterSection }
+  components: {CTASection, NavBar, FooterSection }
 }
 </script>
 <style>
