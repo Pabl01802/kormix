@@ -6,7 +6,9 @@
         <span>O nas</span>
         <h3>Jesteśmy z firmą z wieloletnim doświadczeniem!</h3>
         <p>Działamy nieprzerwanie od 1998 roku. Naszym atutem jest odpowiednia flota samochodowa i wykwalifikowani pracownicy.</p>
-        <button>Zobacz więcej</button>
+        <router-link to="/about" class="about-us-link">
+          Zobacz więcej
+        </router-link>
       </div>
     </div>
   </section>
@@ -48,7 +50,9 @@
     color: var(--text-light);
     margin: 0;
   }
-  button{
+  .about-us-link{
+    text-decoration: none;
+    text-align: center;
     background: var(--dark-green);
     width: 200px;
     color: #fff;
@@ -58,7 +62,7 @@
     border-radius: 5px;
     transition: .2s;
   }
-  button:hover{
+  .about-us-link:hover{
     cursor: pointer;
     scale: 1.01;
   }
@@ -92,7 +96,7 @@
     div > div{
       height: 300px;
     }
-    button{
+    .about-us-link{
       width: 120px;
       padding: 10px 15px;
       font-size: 10px;

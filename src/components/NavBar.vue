@@ -7,16 +7,18 @@
       </div>
       <ul class="navigation">
         <li>
-          <a href="/">Strona główna</a>
+          <router-link to="/">Strona główna</router-link>
         </li>
         <li>
-          <a href="about">O nas</a>
+          <router-link to="/about">O nas</router-link>
         </li>
         <li>
-          <a href="contact">Kontakt</a>
+          <router-link to="/contact">Kontakt</router-link>
         </li>
       </ul>
-      <img class="logo" alt="Kormix logo" src='../assets/logoDark.png'>
+      <router-link to="/">
+        <img class="logo" alt="Kormix logo" src='../assets/logoDark.png'>
+      </router-link>
     </div>
     <h4 class="nav-header">wywóz nieczystości płynnych</h4>
   </nav>
@@ -47,10 +49,17 @@ export default{
   .hamburger{
     display: none;
   }
+  .hamburger:hover{
+    cursor: pointer;
+  }
   nav{
     padding: 0;
     margin: 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
   }
   .nav-top{
     height: 80px;

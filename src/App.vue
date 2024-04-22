@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <router-view>
+  <router-view class='router'>
   </router-view>
   <CTASection />
   <FooterSection />
@@ -15,6 +15,9 @@ export default {
 }
 </script>
 <style>
+  .router{
+    padding-top: 98px;
+  }
   :root{
     --dark-green: #02641E;
     --medium-green: #299B4D;

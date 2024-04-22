@@ -14,13 +14,20 @@ export default {
       this.scrollToElement(this.current)
     })
   },
+  unmounted() {
+    window.clearInterval(this.sliderInterval)
+  },
   setup(){
     const imgRef = ref()
     const carouselRef = ref()
+
     return { imgRef, carouselRef }
   },
   data(){
     let current = 0
+    const sliderInterval = setInterval(() => {
+      this.changeImg('next')
+    }, 5000)
     const areas = [
       {
         id: uuid.v1(),
@@ -48,7 +55,7 @@ export default {
         src: 'https://kormix.pl/wp-content/uploads/2024/02/puszczykowonastrone-718x718.png'
       }
     ]
-    return { areas, current }
+    return { areas, current, sliderInterval }
   },
   methods: {
     scrollToElement(index){
@@ -80,7 +87,7 @@ export default {
           this.scrollToElement(direction)
         }
       }
-    },
+    }
   },
 }
 </script>

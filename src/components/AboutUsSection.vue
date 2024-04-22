@@ -63,6 +63,7 @@ export default {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    margin-top: 110px;
   }
   section > div{
     background: var(--light-green);

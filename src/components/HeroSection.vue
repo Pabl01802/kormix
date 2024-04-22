@@ -9,7 +9,9 @@
         miasta Puszczykowa oraz miasta Poznania. Zajmujemy się opróżnianiem zbiorników bezodpływowych
         oraz oczyszczaniem przydomowych oczyszczalni. Obsługujemy również Rodzinne Ogródki Działkowe „ROD”.
       </p>
-      <button>Kontakt</button>
+      <router-link to="/contact" class="contact-link">
+        Kontakt
+      </router-link>
     </div>
   </section>
 </template>
@@ -39,8 +41,10 @@
   img{
     width: 860px;
   }
-  button{
+  .contact-link{
     padding: 20px;
+    text-decoration: none;
+    font-weight: normal;
     text-transform: uppercase;
     background: var(--light-green);
     border: none;

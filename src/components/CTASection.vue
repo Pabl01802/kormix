@@ -29,6 +29,7 @@ export default {
       height: 60px;
       justify-content: center;
       align-items: center;
+      z-index: 9;
     }
     a{
       display: flex;
